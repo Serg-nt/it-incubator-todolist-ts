@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import {Todolist} from './Todolist';
 import {v1} from "uuid";
+import {Microtask3} from "./microtask3";
 
 export type FilterValuesType = "all" | "active" | "completed";
 
@@ -48,6 +49,7 @@ function App() {
                       changeFilter={changeFilter}
                       addTask={addTask}
             />
+            <Microtask3 />
         </div>
     );
 }
